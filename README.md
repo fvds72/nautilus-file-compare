@@ -23,3 +23,12 @@ Make sure the extension is executable:
 
 Then restart Nautilisu/Files (make sure the process was actually killed). Select a file or folder and right click, now you should see the new option(s).
 
+### Change compare tool
+At the moment is [meld](http://meldmerge.org/) the hard-coded tool that is spawn to do the compare. If you prefer another compare tool, then change the following line in ""nautilus-file-compare.py"":
+
+    diff_rule = "meld {0} {1}"
+  
+Leave {0} and {1} in the line, because they will be replaced by the source-filename & target-filename.
+For example:
+  
+     diff_rule = "kdiff3 {0} {1}"
