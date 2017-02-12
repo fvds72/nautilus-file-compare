@@ -17,5 +17,9 @@ Than copy nautilus-file-compare.py to folder:
 
 If folder does not exist, just create it.
 
+Make sure the extension is executable:
+
+    chmod 744 ~/.local/share/nautilus/python/extension/nautilus-file-compare.py
+
 Then restart Nautilisu/Files (make sure the process was actually killed). Select a file or folder and right click, now you should see the new option(s).
 
